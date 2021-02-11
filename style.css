@@ -78,7 +78,6 @@ section {
     height: 40vh;
     background-color: #e3bfa7;
     background: linear-gradient(to bottom, #e3bfa7, #e3bfa7, #e2e2da);
-    /* border-bottom: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,14 +85,15 @@ section {
 }
 
 .search-result {
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 30px;
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
     display: grid;
-    grid-gap: 25px 5px;
+    grid-gap: 25px;
     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr)); 
     justify-items: center;
-    /* border: 1px solid black;    */
 }
 
 .item {
@@ -107,7 +107,7 @@ section {
 }
 
 .item img {
-    width: 320px;
+    width: 100%;
     height: 300px;
     border-radius: 10px; 
     border: 1px solid #ededed;   
@@ -121,21 +121,25 @@ section {
 }
 
 .item-name {
+    width: 50%;
     font-size: 1.2rem;
     color: #313838;
 }
 
 .item-link {
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: none;
     text-align: center;
     color: white;
     background-color: #2AD6AF;
     border-radius: 10px;
+    align-self: flex-start;
 }
 
 .item-data {
+    width: 60%;
+    margin-top: 10px;
     font-size: 1rem;
     color: #313838;
 }
